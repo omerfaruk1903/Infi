@@ -9,6 +9,7 @@ public class ControlStructurs3 {
         Random random = new Random();
         int randomNumber = random.nextInt(100);
 
+        System.out.println(randomNumber);
 
         if(randomNumber<20){
         System.out.println("Mini");
