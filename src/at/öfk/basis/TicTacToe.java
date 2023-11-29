@@ -14,7 +14,7 @@ public class TicTacToe {
             System.out.println("Current player: " + currentPlayer);
             int row, col;
             do {
-                System.out.println("Gib eine Zahl an. 0, 1 oder 2. Die erste Nummer ist für die waagrechten Spalten");
+                System.out.println("Enter a number. 0, 1 or 2. The first number is for the horizontal columns.");
                 row = scanner.nextInt();
                 col = scanner.nextInt();
             } while (row < 0 || row >= 3 || col < 0 || col >= 3 || board[row][col] != ' ');
