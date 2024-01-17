@@ -73,9 +73,26 @@ public class Garage {
     }
 
 
+    }
     public int getGesamtFahrzeugeugeUebereinander(){
         int wert =0;
+        for (Auto a : autoliste) {
+            wert += a.getFahrzeughoehe();
 
-        return wert;
-    }
+        }
+            return wert;
+
+        }
+
+
+        // Wir suchen nach Autos mit Farbe x
+        // Suche nach Autos mit Leistung von, bis
+        public void getAutoFarbe(String farbe) {
+            System.out.println("Folgende Auto mit Farbe"+farbe+"sind in der Liste:");
+            for (Auto a : autoliste){
+                if(a.getFahrzeughoehe().equals(farbe)){
+                    System.out.println(a.getInfoAuto());
+                }
+            }
+        }
 }
